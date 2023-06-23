@@ -23,13 +23,15 @@ header{
         text-shadow: 3px 0px 0px $color-verde;
     }
 }
+
 body{
-    background-color: $color-lila;
+    background-color: $color-fondo-celular;
     a{
         color: $color-blanco;
         text-decoration: none;
     } 
 }  
+
 main{
     h1{
         @include titulares;
@@ -44,6 +46,7 @@ main{
         flex-flow: wrap;
         justify-content: center;
         margin: 2rem;
+        align-items: center;
         background-color: $color-rosado;
         margin: 2rem;
         padding: 2rem;
@@ -58,6 +61,12 @@ main{
         padding: 0.5rem;
         gap: 0.5rem;
     }
+    .selector div{
+        display: flex;
+        flex-flow: wrap;
+        gap: 2rem;
+        align-items: center;
+    }
     .reproductor{
         @include bordes;
         display: grid;
@@ -69,10 +78,13 @@ main{
         gap: 1rem;
         background-color: $color-verde;
     }
-    div a{
+    div {
+        align-items: center
+    }
+     a{
         @include textos;
         font-size: 2rem;
-        text-shadow: 5px 3px 5px $color-negro;
+        text-shadow: 5px 3px 5px $color-negro; 
     }
     section.botones{
         background-color: $color-amarillo;
@@ -86,22 +98,23 @@ main{
         margin-top: 2rem;
     }
     button.juega{
+        background-image: $gradiente-verde;
         @include botones;
-        $gradiente-verde;
+        
     }  
     button.juega:hover{
             transform: scale(1.2);
     }
     button.dona{
+        background-image: $gradiente-rojo;
         @include botones;
-        $gradiente-rojo;
     }  
     button.dona:hover{
         transform: scale(1.2);
     }
     button.comparte{
+        background-image: $gradiente-azul;
         @include botones;
-        $gradiente-azul;
     }   
     button.comparte:hover{
         transform: scale(1.2);
@@ -112,6 +125,21 @@ footer{
     flex-flow: column;
     align-items: center;
     text-align: center;
+    .orlando3{
+        margin-top: 2rem;
+    }
+    .medusas{
+        margin-top: 2rem;
+    }
+    .estrella{
+        margin-top: 2rem;
+    }
+    .fondo{
+        bottom: 0;
+        position: sticky;
+        height: 100%;
+        width: 100%;
+      }
 }
 
 @media screen and (min-width:600px) {
@@ -183,5 +211,4 @@ footer{
     .camarones{
         display: block;
     }
-
 }
