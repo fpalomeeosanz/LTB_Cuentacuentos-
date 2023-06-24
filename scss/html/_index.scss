@@ -134,12 +134,17 @@ footer{
     .estrella{
         margin-top: 2rem;
     }
+    .burbujas{
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
     .fondo{
         bottom: 0;
         position: sticky;
         height: 100%;
         width: 100%;
-      }
+    }
 }
 
 @media screen and (min-width:600px) {
