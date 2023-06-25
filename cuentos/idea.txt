@@ -1,0 +1,1 @@
+aqui irian los audios combinados para las variables de los botones de la seccion juega. entonces al presionar "escucha" toma la historira o auidio cuento que tiene que ver con esas cuatro variables, personajes, lugares, elementos y generos para llevarte a la seccion escucha donde puedes dar play al audio o buscar otro.
